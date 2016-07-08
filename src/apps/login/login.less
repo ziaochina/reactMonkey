@@ -1,0 +1,218 @@
+@import '../../assets/styles/custom.less';
+@login-prefix-cls: login;
+.@{login-prefix-cls}
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background:url('./img/bg_src.jpg') no-repeat ;
+    header,
+    footer {
+        //height: 60px;
+        //background: #eee
+    }
+    
+    &-header {
+        height: 64px;
+        background: @nav-bg-color;
+        //position: fixed;
+        width: 100%;
+        z-index: 970;
+        box-shadow: 0 5px 8px fade(#000, 15);
+        &-logo {
+            display: inline-block;
+            margin: 15px 0 0 5px;
+            height: 33px;
+            & img {
+                vertical-align: top;
+                display: block;
+            }
+            & a {
+                display: block;
+            }
+        }
+        &-nav {
+            float: right;
+            margin-right: 5px;
+            line-height: 64px;
+            position: relative;
+            & .ant-menu-horizontal {
+                border-bottom-color: transparent;
+            }
+            & .ant-menu {
+                background: transparent;
+                color: @text-color-light;
+                line-height: 62px;
+            }
+            & .ant-menu-horizontal > .ant-menu-item-active {
+                color: @link-hover-color;
+                border-bottom-color: @link-hover-color;
+            }
+        }
+    }
+    
+    &-footer {
+        background: @bg-color;
+        height: 80px;
+        text-align: center;
+        line-height: 60px;
+    }
+   
+    &-banner {
+        flex:1;
+
+        &-bg {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+        }
+
+        & .ant-carousel {
+            height: 100%;
+        }
+       
+        /*
+        flex-direction: column;
+
+        & > .ant-carousel{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & > .ant-carousel > .slick-slider{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+  
+        }
+
+        & > .ant-carousel > .slick-slider > .slick-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        & > .ant-carousel > .slick-slider > .slick-list > .slick-track{
+             flex: 1;
+             width: 0px
+        }*/
+
+
+    }
+    
+    main {
+        display: flex;
+        flex: 1;
+    }
+    
+    &-left {
+        flex: 1
+    }
+    
+    &-main {
+        width: 50em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &-main-form {
+        border: 1px solid #d9d9d9;
+        border-color: #e9e9e9;
+        background: #fff;
+        border-radius: 4px;
+        font-size: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s;
+        padding-bottom: 20px;
+    }
+    
+    &-main-tabs {
+        width: 30em;
+        //height: 30em;
+    }
+    
+    &-main-tabs-form {
+        //height: 15em;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &-main-tabs-form-item {
+        flex-direction: row;
+        display: flex;
+        margin: 16px;
+    }
+    
+    &-main-tabs-form > .ant-form-item {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    &-main-tabs-form > .ant-form-item > label {
+        float: left;
+        width: 50px;
+        //margin-right:5px;
+    }
+    
+    &-main-tabs-form > .ant-form-item > div {
+        flex: 1
+    }
+    
+    &-main-tabs-form > .ant-form-item .z-input {
+        height: 36px;
+    }
+    
+    &-main-tabs-form > .ant-form-item .z-password {
+        height: 36px;
+    }
+    
+    &-main-tabs-form > .ant-form-item .z-input {
+        height: 36px;
+    }
+    
+    &-main-tabs-form-btn {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 36px;
+    }
+    
+    .z-formitem {
+        margin-right: 20px;
+        margin-bottom: 4px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & > label {
+            margin-bottom: 0px;
+            margin-right: 4px;
+            width: 80px
+        }
+        & .has-error {
+            margin-left: 0px;
+        }
+        & .has-error.has-feedback:after {
+            position: relative;
+            margin-left: 0px;
+        }
+        & .ant-form-item-control {
+            display: flex;
+            flex-direction: row;
+        }
+        & .z-checkbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

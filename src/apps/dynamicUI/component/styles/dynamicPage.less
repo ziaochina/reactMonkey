@@ -1,0 +1,191 @@
+@dynamicpage-prefix-cls: z-dynamicpage;
+.@{dynamicpage-prefix-cls}
+{
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+   
+
+@form-prefix-cls: z-form;
+.@{form-prefix-cls}
+{
+	flex:1;
+	display: flex;
+    flex-direction: column;
+}
+
+@formitems-prefix-cls: z-formitems;
+.@{formitems-prefix-cls}
+{
+	display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@formitem-prefix-cls: z-formitem;
+.@{formitem-prefix-cls}
+{
+
+	margin-right: 40px;
+    margin-bottom: 4px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    & > label{
+	    margin-bottom: 0px;
+	    margin-right: 4px;
+	    width: 80px
+    }
+
+    & .has-error{
+    	margin-left: 0px;
+    }
+
+ 	& .has-error.has-feedback:after {
+    	position: relative;
+    	margin-left: 0px;
+    	
+	}
+
+
+ 	& .ant-form-item-control {
+ 		display: flex;
+ 		flex-direction:row;
+
+ 	}
+
+ 	& .z-checkbox{
+ 		display: flex;
+ 		flex-direction:column;
+ 		justify-content:center;
+ 	}
+
+}
+
+@tabs-prefix-cls: z-tabs;
+.@{tabs-prefix-cls}
+{
+	flex:1;
+	display: flex;
+    flex-direction: column;
+
+	& > .ant-tabs{
+		 flex: 1;
+        display: flex;
+        flex-direction: column;
+	}
+	
+	& > .ant-tabs > .ant-tabs-bar{
+    	margin-bottom: 0px 
+    }
+
+     & > .ant-tabs >.ant-tabs-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    & > .ant-tabs >.ant-tabs-content > span {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+     & > .ant-tabs >.ant-tabs-content > .ant-tabs-tabpane {
+        flex: 1;
+    }
+
+    .ant-tabs.ant-tabs-editable-card .ant-tabs-tab:not(.ant-tabs-tab-active):hover .ant-tabs-tab-inner {
+    }
+    /* padding-left: 8px; */
+    /* padding-right: 8px; */
+
+
+
+}
+
+@checkbox-prefix-cls: z-checkbox;
+.@{checkbox-prefix-cls}
+{
+	
+}
+
+
+@reference-prefix-cls: z-reference;
+.@{reference-prefix-cls}{
+	display: inline-block;
+	position: relative;
+    vertical-align: middle;
+	&-inputgroup{
+		width:100%
+	}
+	&-button{
+		float:right;
+		margin-top: 1px
+	}
+	&-popover{
+		.ant-popover-inner-content{
+	    	padding: 6px 6px;
+		}
+		.ant-popover-arrow{
+			display: none
+		}
+	}
+}
+
+
+.public_fixedDataTableCell_main > .z-checkbox {
+	height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;	
+}
+
+
+.public_fixedDataTableCell_main > .z-grid-optioncolumn-cell {
+	height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;	
+}
+
+.public_fixedDataTableCell_main > .z-grid-optioncolumn-cell .ant-btn {
+	height: 30px;
+	border-radius: 0px;
+}
+
+.public_fixedDataTableCell_main  .z-grid-displaycell {
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: center;
+    //align-items: center;	
+    height:30px;
+    padding:8px;
+    width: 100%;
+
+	& .z-grid-displaycell-error{
+		//position: static;
+	}
+    & .has-error.has-feedback:after {
+    	position: static;
+    	margin-left: 0px;
+    	line-height: 0px;
+	}
+
+}
+
+
+
+.ant-form-extra{
+	margin-left:0px;
+	display:none
+}
+
