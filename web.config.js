@@ -1,3 +1,3 @@
 module.exports={
-  RootPath:"/tplus"
+  RootPath:"/"
 }
