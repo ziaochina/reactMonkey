@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server  --compress --port 8081  --host 0.0.0.0",
     "publishwebsite": "webpack --verbose --colors --display-error-details --config webpack.website.config.js ",
-    "product": "webpack --verbose --colors --display-error-details --config webpack.product.config.js ",
+    "product": "webpack --verbose --colors --display-error-details --config webpack.config.js ",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive"
   },
   "dependencies": {
