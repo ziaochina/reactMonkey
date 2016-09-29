@@ -53,13 +53,13 @@ module.exports = {
         new CopyWebpackPlugin([{
             context: './src/vendor',
             from: '**/*',
-            to: '/vendor'
+            to: './vendor'
         }, {
             context: './src/assets/iconfont',
             from: '**/*',
             to: 'iconfont'
         }]),
-   
+
         new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
             'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
