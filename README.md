@@ -4,7 +4,7 @@
 
 代码网址: https://github.com/ziaochina/mk-docs
 
-demo网址：https://ziaochina.github.io/mk-demo/
+demo网址(用户名：1，密码：1)：https://ziaochina.github.io/mk-demo/
 
 demo代码：https://github.com/ziaochina/mk-demo
 
