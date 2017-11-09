@@ -1,4 +1,4 @@
-# 框架近期(2017-7-30)初步完成了重构
+# 新版本地址
 
 介绍网址： https://ziaochina.github.io/mk-docs/
 
@@ -8,7 +8,6 @@ demo网址(用户名：13334445556，密码：1)：https://ziaochina.github.io/m
 
 demo代码：https://github.com/ziaochina/mk-demo
 
-这个项目不再更新
 
 # start
 
