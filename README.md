@@ -1,12 +1,8 @@
-# 新版本地址
+> 新版框架已于2018.10.24号正式发布:
 
-介绍网址： https://ziaochina.github.io/mk-docs/
+> 官网：https://www.makajs.org
 
-代码网址: https://github.com/ziaochina/mk-docs
-
-demo网址(用户名：13334445556，密码：1)：https://ziaochina.github.io/mk-demo/
-
-demo代码：https://github.com/ziaochina/mk-demo
+> 代码: https://github.com/makajs/maka
 
 
 # start
